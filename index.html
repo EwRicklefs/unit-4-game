@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets\css\style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark mb-5">
+        <span class="navbar-brand mb-0 h1">Crystals Collector</span>
+    </nav>
+
+    <div class="modal fade" id="winModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">You win! </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/chemistexpla.jpg" style="height:150px"/>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="lossModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">You lose! Better luck next time!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/maxresdefaultHulk.jpg" style="height:150px"/>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row mb-3">
+            <div class="col-sm-3 crystal" id="crystal1">
+                <img class="cryImg" src="assets/images/crystal1.jpg">
+            </div>
+            <div class="col-sm-3 crystal" id="crystal2">
+                <img class="cryImg" src="assets/images/crystal2.jpg">
+            </div>
+            <div class="col-sm-3 crystal" id="crystal3">
+                <img class="cryImg" src="assets/images/crystal3.jpg">
+            </div>
+            <div class="col-sm-3 crystal" id="crystal4">
+                <img class="cryImg" src="assets/images/crystal4.jpg">
+            </div>
+        </div>
+        <div class="row mb-3 pt-2" id="scores">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-4 mx-auto">
+                <p>Your current score: <span id="score">0</span></p>
+            </div>
+            <div class="col-sm-4 mx-auto">
+                <p>The target score is: <span id="target">0</span></p>
+            </div> 
+            <div class="col-sm-2"></div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-2"></div>
+
+            <div class="col-sm-5 mx-auto" id="stats">
+                <p>Wins: <span id="wins">0</span></p>
+                <p>Losses: <span id="losses">0</span></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8 mx-auto" id="howTo">
+                <p>
+                    You will be given a random number at the start of the game (target).
+                    <br>
+                    There are four posible crystals to choose from, each one adds a specific amount of points to you total score.
+                    <br>
+                    You win by getting your point total to match the target score.
+                    <br>
+                    The crystal values are hidden, you must figure them out from what they add to your total.
+                    <br>
+                    Each new game will change the values of the crystals
+
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="assets\javascript\game.js"></script>
+</body>
+</html>

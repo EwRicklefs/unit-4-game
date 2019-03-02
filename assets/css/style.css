@@ -1,0 +1,47 @@
+
+
+.cryImg {
+    height:80px;
+    padding-left:100px;
+    padding-top:10px;
+}
+.crystal {
+    height:100px;
+}
+
+#howTo {
+    background-color:slateblue;
+    -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+    -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+    box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+}
+
+#scores {
+    background-color:lightsalmon;
+    -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+    -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+    box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+}
+
+#stats {
+    background-color:greenyellow;
+    -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+    -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+    box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+}
+
+#crystal1 {
+    border:solid 2px green;
+}
+
+#crystal2{
+    border:solid 2px red;
+}
+
+#crystal3{
+    border:solid 2px yellow;
+}
+
+#crystal4{
+    border:solid 2px blue;
+}
