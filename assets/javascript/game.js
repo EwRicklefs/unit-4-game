@@ -28,7 +28,6 @@ function refreshUI() {
     $("#wins").text(wins);
     $("#score").text(score);
     $("#target").text(target);
-    console.log("refreshed");
 }
 
 
